@@ -17,7 +17,7 @@ a {
 }
 
 #main{
-    margin-top: 5em;
+    padding-top: 5em;
     flex-direction: column;
     height: auto; 
     width: auto; 
