@@ -1,7 +1,7 @@
 html, body {
     font-family: "Lucida Console", Monaco, monospace;
-    background-color: #24292e;  
-    color: white;  
+    background-color: #24292e;
+    color: white;
 }
 
 /* Default size for desktop */
@@ -14,7 +14,7 @@ html, body {
 /* Mobile size */
 @media only screen and (max-width: 768px) {
     #logo img {
-        max-width: 60%;
+        max-width: 80%;
     }
 }
 
@@ -29,25 +29,13 @@ a {
 }
 
 #main {
-    padding-top: 2em;  #main {
-    padding-top: 2em;  /* Reduced from 5em to 2em */
+    padding-top: 2em;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: auto;
     width: auto;
     max-width: 100vw;
-    top: 30%;
-    left: 50%;
-}
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    width: auto;
-    max-width: 100vw;
-    top: 30%;
-    left: 50%;
 }
 
 #contact-info, #logo, #blurb {
@@ -64,5 +52,5 @@ a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    
+    font-family: "Lucida Console", Monaco, monospace;  /* Ensure the font matches */
 }
