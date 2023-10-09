@@ -1,5 +1,5 @@
 html, body {
-    font-family: "Lucida Console", Monaco, monospace;
+    font-family: 'Roboto', sans-serif;
     background-color: #24292e;
     color: white;
 }
@@ -9,13 +9,6 @@ html, body {
     max-width: 20%;
     display: block;
     margin: auto;
-}
-
-/* Mobile size */
-@media only screen and (max-width: 768px) {
-    #logo img {
-        max-width: 80%;
-    }
 }
 
 p {
@@ -38,19 +31,107 @@ a {
     max-width: 100vw;
 }
 
-#contact-info, #logo, #blurb {
+#about-us {
+    position: relative;
+    color: #24292e;
+    border-radius: 10px;
+    width: 50%;
+    margin: 2em auto;
     text-align: center;
-    color: black;
+    overflow: hidden;
+    padding: 2em;
+}
+
+#content-overlay {
+    padding: 2em;
+    color: #e5e5e5;
+}
+
+#about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+#content-sections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-tile, .separator {
+    width: 40%;
+}
+
+.content-tile {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+    background-color: rgba(229, 229, 229, 0.7);
+    text-align: center;
+}
+
+.content-tile h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+.separator {
+    height: 2px;
+    margin: 40px auto;
+    background: linear-gradient(to right, #24292e, #7536af, #24292e);
+}
+
+#contact-info, #logo, #client-login, #need-support {
+    text-align: center;
+    color: white;
     padding: 0.5rem;
 }
 
-#blurb a {
+#client-login, #need-support {
+    padding-bottom: 4em;
+}
+
+#client-login a, .support-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border-radius: 5px;
-    background: linear-gradient(to bottom, #7536af, #8A2BE2);  /* Violet gradient */
+    background: linear-gradient(to bottom, #7536af, #8A2BE2);
     color: white;
     text-decoration: none;
     font-weight: bold;
-    font-family: "Lucida Console", Monaco, monospace;  /* Ensure the font matches */
+    margin: 2em;
+}
+
+#need-support a[href^="tel:"] {
+    color: #7536af;  /* Violet color */
+    font-size: 1.5em;  /* Larger font size */
+    font-weight: bold;  /* Bold text */
+}
+
+/* Responsive styles for smaller screens */
+@media only screen and (max-width: 768px) {
+    #logo img {
+        max-width: 80%;
+    }
+
+    #about-us, .content-tile, .separator {
+        width: 90%;
+    }
+
+    h1, h2 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 1.1rem;  /* Increased paragraph font size for smaller screens */
+    }
+
+    #client-login a, .support-button {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+
+    .separator {
+        margin: 20px auto;
+    }
 }
